@@ -1,13 +1,102 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 50px 0;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  position: relative
+}
+
+.profile-picture {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.overlay-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: none;
+}
+
+.overlay {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: relative;
+}
+
+.pic {
+  position: absolute;
+  z-index: 10;
+  bottom: 5px;
+  left: 40px;
+}
+
+.profile-picture:hover .overlay-pic {
+  display: block;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.share {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.share:hover .rect-fill{
+  fill: #F9FAFB;
+}
+
+.share:hover .path-stroke{
+  stroke: #667085;
+}
+
+.desktop-share {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin: auto;
+ 
+}
+
+.slack {
+  display: none;
+}
+
+.mobile-share {
+  display: none;
+}
+@media (max-width: 425px) {
+  .mobile-share {
+    display: block;
+  }
+
+  .desktop-share {
+    display: none;
+  }
 }
