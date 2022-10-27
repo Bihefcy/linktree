@@ -5,6 +5,10 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #667085;
+}
 .App {
   width: 80%;
   max-width: 900px;
@@ -121,13 +125,15 @@ body {
 .links {
   width: 100%;
 }
+.linka {
+  margin-bottom: 20px;
+}
 
 .link {
   width: 100%;
   margin: auto;
   height: 76px;
   background-color: #EAECF0;
-  margin-bottom: 20px;
   border-radius: 8px;
   border: none;
 }
@@ -136,6 +142,21 @@ body {
   background-color: #D0D5DD;
 }
 
+
+.link-text {
+  display: none;
+  background-color: #D0D5DD;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.linka:hover .link-text {
+  display: block;
+}
+
+.linka:focus .link-text {
+  display: block;
+}
 
 .footer {
   width: 100%;

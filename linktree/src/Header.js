@@ -14,7 +14,7 @@ const Header = () => {
                 <p>Clearystal</p>
             </div>
             <div className="slack" id="slack">
-                <p></p>
+                <p>@Victor</p>
             </div>
 
             <div className="share">
