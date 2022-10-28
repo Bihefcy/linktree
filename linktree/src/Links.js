@@ -18,7 +18,7 @@ const Links = () => {
             </div>
             
             <div className="linka">
-               <a href="https://books.zuri.team/python-for-beginners?ref_id=Victor" target="_blank" rel="noreferrer" className="link" id="book_python">
+               <a href="https://books.zuri.team/python-for-beginners?ref_id=Victor" target="_blank" rel="noreferrer" className="link" id="book__python">
                     <p>Python Books</p>
                     
                     <div className="link-text">
@@ -38,7 +38,7 @@ const Links = () => {
             </div>
             
             <div className="linka">
-                <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer" className="link" id="book_design">
+                <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer" className="link" id="book__design">
                    <p>Design Books</p>
                     
                     <div className="link-text">
