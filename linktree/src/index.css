@@ -117,7 +117,11 @@ a {
   }
 
   .footer {
-    display: none;
+    display: block;
+  }
+
+  .footer-logo {
+    display: block;
   }
 }
 
@@ -125,17 +129,19 @@ a {
 .links {
   width: 100%;
 }
+
 .linka {
   margin-bottom: 20px;
-}
-
-.link {
   width: 100%;
-  margin: auto;
-  height: 76px;
   background-color: #EAECF0;
   border-radius: 8px;
   border: none;
+}
+
+a > p {
+  width: 100%;
+  padding: 25px 0;
+  
 }
 
 .link:hover {
@@ -171,10 +177,13 @@ a {
   gap: 10px;
 }
 
-.footer-logo {
+@media (min-width: 426px) {
+  .footer-logo {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+}
+
 
