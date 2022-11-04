@@ -5,14 +5,19 @@ const Contact = () => {
         <div className="contact">
             <div><p className="contact-me">Contact Me</p></div>
             <div>
-                <p className="contact-text">Hi there, contact me to ask about anything you have in mind.</p>
+                <p className="contact-text">Hi there, contact me to ask me about anything you have in mind.</p>
                 </div>
             <form>
-                <fieldset>
-                    <label for="first_name">First name</label>
-                    <input type="text" id="first_name" placeholder="Enter your first name"></input>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" placeholder="Enter your last name"></input>
+                <fieldset className="name">
+                    <div>
+                        <label for="first_name">First name</label>
+                        <input type="text" id="first_name" placeholder="Enter your first name"></input>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name"></input>
+                    </div>
+                    
                 </fieldset>
                 <fieldset>
                     <label for="email">Email</label>
@@ -22,7 +27,7 @@ const Contact = () => {
                     <label for="message">Message</label>
                     <textarea type="text" id="message" placeholder="Send me a message and I'll reply you as soon as possible..."/>
                 </fieldset>
-                <fieldset>
+                <fieldset className="checkbox">
                     <input type="checkbox" id="check"></input>
                     <label for="check">You agree to providing your data to Bihefcy who may contact you.</label>
                 </fieldset>
