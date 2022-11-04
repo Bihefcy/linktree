@@ -121,7 +121,10 @@ a {
   }
 
   .footer-logo {
+    border-top: solid 1px #667085b7;
+    padding: 20px 0;
     display: block;
+    text-align: left;
   }
 }
 
@@ -166,7 +169,6 @@ a > p {
 
 .footer {
   width: 100%;
-  padding-bottom: 20px;
 }
 
 .sandg {
@@ -179,6 +181,8 @@ a > p {
 
 @media (min-width: 426px) {
   .footer-logo {
+  border-top: solid 1px #667085b7;
+  padding: 20px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;

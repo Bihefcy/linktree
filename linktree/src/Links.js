@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Links = () => {
     return ( 
-        <div className="links">
+            <div className="links">
             <div className="linka">
                 <a href="https://mobile.twitter.com/clearystal" target="_blank" rel="noreferrer" className="link"><p>Twitter</p></a>
             </div>
@@ -46,10 +48,21 @@ const Links = () => {
                     </div>
                 </a>
             </div>
+
+            <div className="linka">
+                <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer" className="link" id="contact">
+                   <p>Design Books</p>
+                </a>
+            </div>
+
+            <div className="linka">
+                <Link to="./contact" rel="noreferrer" className="link" id="contact">
+                   <p>Contact Me</p>
+                </Link>
+            </div>
             
         </div>
-        
-     );
+ );
 }
  
 export default Links;
