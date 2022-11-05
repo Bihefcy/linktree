@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import slack from './slack.svg'
+import icon from './Social icon.svg'
 
 const Links = () => {
     return ( 
@@ -50,17 +52,15 @@ const Links = () => {
             </div>
 
             <div className="linka">
-                <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer" className="link" id="contact">
-                   <p>Design Books</p>
-                </a>
-            </div>
-
-            <div className="linka">
                 <Link to="./contact" rel="noreferrer" className="link" id="contact">
                    <p>Contact Me</p>
                 </Link>
             </div>
             
+            <div className="sandg">
+                <img src={slack} alt="slack icon" />
+                <img src={icon} alt="github icon" />
+            </div>
         </div>
  );
 }

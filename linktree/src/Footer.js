@@ -1,16 +1,10 @@
 import i4g from './I4G.svg'
 import logo from './logo.svg'
-import slack from './slack.svg'
-import icon from './Social icon.svg'
 
 
 const Footer = () => {
     return ( 
         <div className="footer">
-            <div className="sandg">
-                <img src={slack} alt="slack icon" />
-                <img src={icon} alt="github icon" />
-            </div>
 
             <div className="footer-logo">
                 <div>

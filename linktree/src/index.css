@@ -195,6 +195,7 @@ a > p {
 .contact {
   width: 100%;
 }
+
 .contact .contact-me {
   font-size: 24px;
   font-weight: 800;
@@ -223,10 +224,12 @@ form {
   gap: 20px;
   justify-content: space-between;
 }
+
 .name div {
   width: 45%;
   margin: 10px 0;
 }
+
 @media (max-width:426px) {
   .name {
     display: block;
@@ -245,6 +248,8 @@ input[type="text"]{
   width: 100%;
   margin-top: 10px;
   height: 30px;
+  font-family: inherit;
+  outline: none;
 }
 input[type="checkbox"] {
   margin-right: 8px;
@@ -259,7 +264,22 @@ textarea {
   border: 1px solid #667085;
   border-radius: 5px;
   padding-inline-start: 10px;
+  padding-block-start: 5px;
+  font-family: inherit;
+  resize: none;
+  outline: none;
 }
+
+input[type=text]:focus,
+input[type=email]:focus{
+  border: 1px solid rgb(147, 147, 250);
+}
+
+textarea:focus {
+  border: 1px solid rgb(147, 147, 250);
+  box-shadow: 2px 2px rgb(147, 147, 250), -2px -2px rgb(147, 147, 250);
+}
+
 
 #btn__submit {
   width: 100%;
@@ -267,7 +287,83 @@ textarea {
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: rgb(37, 37, 250);
+  background-color: rgb(0, 0, 244);
   margin-top: 5px;
+  font-family: inherit;
+  margin-bottom: 30px;
 }
 
+#btn__submit:hover {
+  background-color: rgb(70, 70, 252);
+}
+
+
+.contact #error,
+.contact #error-first-name{
+  color: rgb(248, 82, 82);
+  font-size: smaller;
+  margin: 2px;
+  display: none;
+}
+
+form.submitted input[type="email"]:invalid ~ #error {
+  display: block;
+}
+form.submitted input[type="text"]:invalid {
+  border: 1px solid rgb(248, 82, 82);
+  box-shadow: 2px 2px rgb(248, 82, 82), -2px -2px rgb(248, 82, 82);
+}
+
+form.submitted input[type="email"]:invalid {
+  border: 1px solid rgb(248, 82, 82);
+  box-shadow: 2px 2px rgb(248, 82, 82), -2px -2px rgb(248, 82, 82);
+}
+
+form.submitted input[type="text"]:focus {
+  border: 1px solid rgb(147, 147, 250);
+}
+
+form.submitted input[type="email"]:focus {
+  border: 1px solid rgb(147, 147, 250);
+}
+
+form.submitted input[type="text"]:invalid ~ #error {
+  display: block;
+}
+form.submitted input[type="text"]:focus ~ #error {
+  display: none;
+}
+
+form.submitted input[type="email"]:invalid ~ #error {
+  display: block;
+}
+form.submitted input[type="email"]:focus ~ #error {
+  display: none;
+}
+
+form.submitted textarea:invalid {
+  border: 1px solid rgb(248, 82, 82);
+  box-shadow: 2px 2px rgb(248, 82, 82), -2px -2px rgb(248, 82, 82);
+}
+
+form.submitted textarea:focus {
+  border: 1px solid rgb(147, 147, 250);
+  box-shadow: 2px 2px rgb(147, 147, 250), -2px -2px rgb(147, 147, 250);
+}
+form.submitted textarea:invalid ~ #error {
+  display: block;
+}
+
+form.submitted textarea:focus ~ #error {
+  display: none;
+}
+
+.back-home {
+  display: none;
+  text-align: center;
+  font-size: smaller;
+}
+
+.display {
+  display: block;
+}
